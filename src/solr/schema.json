@@ -1,0 +1,128 @@
+[
+  {
+    "name": "id",
+    "type": "string",
+    "indexed": true,
+    "stored": true,
+    "required": true
+  },
+  {
+    "name": "doc_id",
+    "type": "string",
+    "indexed": true,
+    "stored": true
+  },
+  {
+    "name": "organization",
+    "type": "string",
+    "indexed": true,
+    "stored": true
+  },
+  {
+    "name": "node_type",
+    "type": "string",
+    "indexed": true,
+    "stored": true
+  },
+  {
+    "name": "parent_id",
+    "type": "string",
+    "indexed": true,
+    "stored": true
+  },
+  {
+    "name": "child_ids",
+    "type": "strings",
+    "indexed": false,
+    "stored": true,
+    "multiValued": true
+  },
+  {
+    "name": "reference_ids",
+    "type": "strings",
+    "indexed": false,
+    "stored": true,
+    "multiValued": true
+  },
+  {
+    "name": "reference_count",
+    "type": "pint",
+    "indexed": true,
+    "stored": true
+  },
+  {
+    "name": "section_path",
+    "type": "string",
+    "indexed": true,
+    "stored": true
+  },
+  {
+    "name": "level",
+    "type": "pint",
+    "indexed": true,
+    "stored": true
+  },
+  {
+    "name": "title",
+    "type": "text_general",
+    "indexed": true,
+    "stored": true
+  },
+  {
+    "name": "content",
+    "type": "text_general",
+    "indexed": true,
+    "stored": true
+  },
+  {
+    "name": "summary",
+    "type": "text_general",
+    "indexed": true,
+    "stored": true
+  },
+  {
+    "name": "chunk_order",
+    "type": "pint",
+    "indexed": true,
+    "stored": true
+  },
+  {
+    "name": "embedding",
+    "type": "knn_vector",
+    "indexed": true,
+    "stored": true,
+    "dimension": 768,
+    "similarityFunction": "cosine",
+    "vectorOptimization": "default"
+  },
+  {
+    "name": "created_at",
+    "type": "pdate",
+    "indexed": true,
+    "stored": true
+  },
+  {
+    "name": "chunk_group_id",
+    "type": "pint",
+    "indexed": true,
+    "stored": true
+  },
+  {
+    "name": "group_label",
+    "type": "string",
+    "indexed": true,
+    "stored": true
+  },
+  {
+    "name": "group_coherence_score",
+    "type": "string",
+    "indexed": false,
+    "stored": true
+  },
+  {
+    "name": "document_style",
+    "type": "string",
+    "indexed": true,
+    "stored": true
+  }
+]
